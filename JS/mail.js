@@ -11,7 +11,7 @@
 // -creo mail che fanno accedere alla pagina(lista)
 // -creo la variabile booleana
 // -faccio un for che mi controlla tutte le mail della lista e se trovo la mail allora setto la variabile booleana a true
-// -esco dal ciclo e se vedo che la variabile booleana è ancora falsa allora ti scrivo access denied.
+// -esco dal ciclo e se vedo che la variabile booleana è ancora falsa allora ti scrivo access denied
 
 
 
@@ -30,12 +30,16 @@ let risultato = false
 
 for (i = 0; i < emailList.length; i++) {
     if (emailUtente == emailList[i]) {
-        risultato = true;
+        risultato = true
     }
     if (risultato == true) {
-        console.log("Bentornato")
+        // console.log("Bentornato")
         alert("Bentornato");
+    } else {
+        // console.log("Per accedere devi registrare la tua email")
+        alert("Per accedere devi registrare la tua email");
     }
+
 }
 
 
